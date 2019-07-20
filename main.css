@@ -1,78 +1,77 @@
-@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    color: #070707;
+a {
+  text-decoration: none;
+  color: #070707;
 }
 
 a:link {
-    transition: all .3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 a:visited {
-    color: #070707;
+  color: #070707;
 }
 
-a:hover{
-    color: #28B0FF;
+a:hover {
+  color: #28b0ff;
 }
 
 a:active {
-    color: #28B0FF;
+  color: #28b0ff;
 }
 
 body {
-    margin: 0;
-    font-family: 'Karla', sans-serif;
+  margin: 0;
+  font-family: "Karla", sans-serif;
 }
 
 .container {
-    width: 100%;
+  width: 100%;
 }
 
 /*********************
 Start Nav Bar (Header) Section
 *********************/
-.masterhead-inner{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.masterhead-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .menu {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex: 1 0 30vw;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex: 1 0 30vw;
 }
 
 .menu li {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 .menu-1 {
-    justify-content: flex-end;
-
+  justify-content: flex-end;
 }
 
 .logo {
-    flex: 0 1 10vw;
-    text-align: center;
+  flex: 0 1 10vw;
+  text-align: center;
 }
 
 .logo img {
-    width: 100px;
+  width: 100px;
 }
 
-@media all and (max-width: 400px){
-    .logo img {
-        width: 60px;
-    }   
+@media all and (max-width: 400px) {
+  .logo img {
+    width: 60px;
+  }
 }
 
 /*********************
