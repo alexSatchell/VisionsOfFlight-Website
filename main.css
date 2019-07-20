@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: #070707;
+}
+
+a:link {
+    transition: all .3s ease 0s;
+}
+
+a:visited {
+    color: #070707;
+}
+
+a:hover{
+    color: #28B0FF;
+}
+
+a:active {
+    color: #28B0FF;
+}
+
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    width: 100%;
+}
+
+/*********************
+Start Nav Bar (Header) Section
+*********************/
+.masterhead-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 1 0 30vw;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu-1 {
+    justify-content: flex-end;
+
+}
+
+.logo {
+    flex: 0 1 10vw;
+    text-align: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+@media all and (max-width: 400px){
+    .logo img {
+        width: 60px;
+    }   
+}
+
+/*********************
+End Nav Bar (Header) Section
+*********************/
