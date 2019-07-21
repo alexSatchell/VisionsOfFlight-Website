@@ -78,7 +78,9 @@ Start Nav Bar (Header) Section
   }
 }
 
+
 /*  */
+
 /*********************
 End Nav Bar (Header) Section
 *********************/
@@ -177,3 +179,19 @@ End Slide Show Section
 /*********************
 Start Music Section
 *********************/
+.song-container {
+  text-align: center;
+  font-size: 30px;
+}
+
+.img-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  padding: 0 20px 20px;
+}
