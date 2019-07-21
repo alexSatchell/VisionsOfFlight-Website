@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main.css" />
+    <script src="script-slide-navigation.js"></script>
     <title>Home - VOF Collective</title>
   </head>
   <body>
@@ -30,9 +31,33 @@
         </div>
       </header>
       <main>
-        <div class="slideshow">
-          <!-- put slide show code here -->
-        </div>
+        <div class="slide-container">
+            <div class="slider">
+                <img class="active" src="images/slideshow/vof-slide-img1.jpg" alt="">
+                <img src="images/slideshow/vof-slide-img2.jpg" alt="">
+                <img src="images/slideshow/vof-slide-img3.jpg" alt="">
+                <img src="images/slideshow/vof-slide-img4.jpg" alt="">
+                <img src="images/slideshow/vof-slide-img5.jpg" alt="">
+            </div>
+                <nav class="slider-nav">
+                    <ul>
+                        <li class="arrow">
+                            <button class="previous">
+                                <span>
+                                    <i class="ion-arrow-left-c"></i>
+                                </span>
+                            </button>
+                        </li>
+                        <li class="arrow">
+                            <button class="next">
+                                <span>
+                                    <i class="ion-arrow-right-c"></i>
+                                </span>
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
       </main>
       <footer>
         <small>&copy;2018 VOF COLLECTIVE, ALL RIGHTS RESERVED</small>
