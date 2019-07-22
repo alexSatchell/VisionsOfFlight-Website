@@ -30,12 +30,25 @@ a:active {
 }
 
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   font-family: "Karla", sans-serif;
 }
 
 .container {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+main {
+  flex-grow: 1;
+}
+
+header, main, footer {
+  flex-shrink: 0;
 }
 
 /*********************
@@ -194,11 +207,50 @@ Start Music Section
 
 .item {
   padding: 0 20px 20px;
-  height: 500px;
-  width: 500px;
+  height: 400px;
+  width: 400px;
 }
 
  main div div div img:hover{
-  opacity: .5;
+  opacity: .2;
   transition: .9s;
 }
+
+.img-area div a img {
+  border-radius: 20%;
+  
+}
+
+.img-area a {
+  position: relative;
+}
+
+a span {
+  display: none;
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+  padding: 10px;
+  color: #070707;
+  font-size: .60em;
+  
+}
+
+a:hover span {
+  display: block;
+  transition: .9s;
+}
+
+@media all and (max-width: 800px) {
+  .item {
+    height: 300px;
+    width: 300px;
+  }
+}
+/*********************
+End Music Section
+*********************/
+
+/*********************
+Start footer Section
+*********************/
