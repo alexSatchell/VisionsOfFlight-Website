@@ -31,33 +31,62 @@
         </div>
       </header>
       <main>
+
+
         <div class="slide-container">
-            <div class="slider">
-                <img class="active" src="images/slideshow/vof-slide-img1.jpg" alt="">
-                <img src="images/slideshow/vof-slide-img2.jpg" alt="">
-                <img src="images/slideshow/vof-slide-img3.jpg" alt="">
-                <img src="images/slideshow/vof-slide-img4.jpg" alt="">
-                <img src="images/slideshow/vof-slide-img5.jpg" alt="">
+
+            <div class="slider fade">
+                <img class="active" src="images/slideshow/vof-img1.jpg" alt="">
             </div>
-                <nav class="slider-nav">
-                    <ul>
-                        <li class="arrow">
-                            <button class="previous">
-                                <span>
-                                    <i class="ion-arrow-left-c"></i>
-                                </span>
-                            </button>
-                        </li>
-                        <li class="arrow">
-                            <button class="next">
-                                <span>
-                                    <i class="ion-arrow-right-c"></i>
-                                </span>
-                            </button>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="slider fade">
+                <img src="images/slideshow/vof-img2.jpg" alt="">
             </div>
+            <div class="slider fade">
+                <img src="images/slideshow/vof-img3.jpg" alt="">
+            </div>
+            <div class="slider fade">
+                <img src="images/slideshow/vof-img4.jpg" alt="">
+            </div>
+            <div class="slider fade">
+                <img src="images/slideshow/vof-img5.jpg" alt="">
+            </div>
+                             
+        </div>
+        <br>
+
+        <div class="dot-holder" style="text-align: center;">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>         
+        </div>
+
+      </div>
+
+      <script>
+          var slideIndex = 0;
+          showSlides();
+          
+          function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("slider");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+          }
+          </script>
+
+
       </main>
       </div>
       <footer class="footer">
