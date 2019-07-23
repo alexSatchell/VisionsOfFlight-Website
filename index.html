@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main.css" />
-    <script src="script-slide-navigation.js"></script>
+    <script src="scriptSlideNavigation.js"></script>
     <title>Home - VOF Collective</title>
   </head>
   <body>
@@ -20,7 +20,7 @@
           <div class="logo">
             <a href="index.html"
               ><img
-                src="images/twitter-bird-png-image-70098.png"
+                src="images/IMG-0504.png"
                 alt="home button"
             /></a>
           </div>
@@ -63,29 +63,7 @@
         </div>
 
       </div>
-
-      <script>
-          var slideIndex = 0;
-          showSlides();
-          
-          function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("slider");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) {slideIndex = 1}    
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 2 seconds
-          }
-          </script>
-
+      <script src="scriptSlideNavigation.js"></script>
 
       </main>
       </div>

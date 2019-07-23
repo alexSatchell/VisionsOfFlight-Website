@@ -82,7 +82,7 @@ Start Nav Bar (Header) Section
 }
 
 .logo img {
-  width: 100px;
+  width: 150px;
 }
 
 @media all and (max-width: 400px) {
@@ -102,7 +102,8 @@ End Nav Bar (Header) Section
 Start Slide Show Section
 *********************/
 .slide-container {
-  max-width: 1000px;
+  max-width: 800px;
+  height: auto;
   margin: 0 auto;
   padding: 50px;
   position: relative;
@@ -119,15 +120,15 @@ Start Slide Show Section
 }
 
 .active {
-  background-color: #717171;
+  background-color: #00D8B3;
 }
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes fade {
@@ -238,4 +239,15 @@ padding-left: 15px;
 }
 .icons-right {
 padding-right: 15px;
+}
+
+@media all and (max-width: 400px) {
+ .icons-right{
+  transform: scale(0.6,0.6);
+ }
+ 
+ .copyright-left {
+   font-size: 13px;
+ }
+
 }
