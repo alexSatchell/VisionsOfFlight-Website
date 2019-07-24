@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
 
 * {
@@ -27,6 +28,10 @@ a:hover {
 
 a:active {
   color: #28b0ff;
+}
+
+html {
+  overflow-y:scroll; 
 }
 
 body {
@@ -215,6 +220,39 @@ a:hover span {
 }
 /*********************
 End Music Section
+*********************/
+
+/*********************
+Start Artist Section
+*********************/
+.artist-container {
+  text-align: center;
+  font-size: 30px;
+}
+
+.artist-area {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.artist-area div a img {
+  border-radius: 100%;
+  
+}
+
+.artist-item {
+  padding: 0 20px 20px;
+  height: 200px;
+  width: 100px;
+}
+
+
+
+/*********************
+End Artist Section
 *********************/
 
 /*********************
