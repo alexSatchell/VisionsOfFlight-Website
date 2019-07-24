@@ -269,7 +269,7 @@ Start Tour Section
 table {
 	display: flex;
 	flex-flow: column nowrap;
-	line-height: 1.25;
+	line-height: 2.25;
 	border: 0;
 }
 
