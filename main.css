@@ -27,7 +27,9 @@ a:hover {
 }
 
 html {
+  max-width: 100%;
   overflow-y:scroll; 
+  overflow-x: hidden;
 }
 
 body {
@@ -304,8 +306,6 @@ Start Artist Profile Section
 	width: 100%;
   }
 
-
-  
   #artist-name{
 	font-size: 70px;
   }
