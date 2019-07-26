@@ -355,6 +355,15 @@ th {
 	border-bottom: 1px solid #000;
 }
 
+.purchase a {
+  color: #28b0ff;
+}
+
+.purchase:hover a {
+  color: #00549b;
+  text-decoration: underline;
+}
+
 /* This will affect only Chrome browsers 29+
 	* See: http://browserhacks.com/
 	* Hack because 'hyphens: auto;' is supported in Chrome only on Android & Mac 
