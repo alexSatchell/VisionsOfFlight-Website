@@ -295,6 +295,58 @@ End Artist Section
 *********************/
 
 /*********************
+Start Artist Profile Section
+*********************/
+
+.header-titles{
+	position: absolute;
+  padding-left: 15px;
+	width: 100%;
+  }
+
+
+  
+  #artist-name{
+	font-size: 70px;
+  }
+  
+#artist-description{
+	font-size: 20px;
+	letter-spacing:12px;
+  }
+  
+  #t{
+	margin: 60px 150px 120px 150px;
+  }
+   
+  #t1{ 
+	  text-align: center;
+	  font-weight: 800;
+	  font-size: 100px;  
+  }
+  
+  #t2{
+	  text-align: center;
+	  font-weight: 300;
+	  font-size: 35px;  
+  }
+  
+  .soundcloud{
+	margin: 60px 300px;
+  }
+
+  .soundcloud-header {
+    margin-top: 25px;
+  }
+  
+ .header-titles h1, h2 {
+	text-shadow: #FFF -3px 0 5px;
+ }
+/*********************
+End Artist Profile Section
+*********************/
+
+/*********************
 Start Tour Section
 *********************/
 
