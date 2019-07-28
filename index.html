@@ -71,8 +71,8 @@
 
       <div id="modform" class="background-modal">
   
-          <form class="modal-content animate" action="your-page.php">
-  
+          <form class="modal-content animate" action="form-processing.php" method="POST">
+            <input type="hidden" id="recipient" name="recipient" value="satchellalex@gmail.com">
               <div class="close-button">
                   <span onclick="document.getElementById('modform').style.display='none'" class="close" title="Close Modal">&times;</span>
   
@@ -154,7 +154,8 @@
                   <input type="checkbox" name="agree" required>
   
                   <button type="submit">SUBSCRIBE</button>
-              </div>           
+              </div>    
+              <input type="hidden" id="redirect" name="redirect" value="form-confirmation.html">       
           </form>
       </div>
       <script>
