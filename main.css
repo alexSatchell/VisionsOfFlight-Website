@@ -34,6 +34,7 @@ html {
 }
 
 body {
+  text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
   width: 100%;
@@ -104,10 +105,6 @@ Start Nav Bar (Header) Section
     font-size: 12px;
   }
 }
-
-
-/*  */
-
 /*********************
 End Nav Bar (Header) Section
 *********************/
@@ -167,6 +164,114 @@ Start Slide Show Section
 
 /*********************
 End Slide Show Section
+*********************/
+
+/*********************
+Start Form Section
+*********************/
+input[type=text], input[type=password], input[type=email], select{
+  width: 100%;
+  padding: 20px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 30px;
+}
+
+button {
+  background-color: #4283f4 ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 30px
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+hr {
+  margin-bottom: 1.75rem;
+}
+
+.close-button {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.form-container {
+  padding: 30px;
+}
+
+.background-modal {
+  display: none; 
+  position: fixed;
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 80%; 
+  max-width: 400px;
+  text-align: left;
+  border-radius: 12px;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+@media screen and (max-width: 300px) {
+  span.password {
+     display: block;
+     float: none;
+  }
+  
+}
+/*********************
+End Form Section
 *********************/
 
 /*********************
@@ -417,11 +522,6 @@ th {
   text-decoration: underline;
 }
 
-/* This will affect only Chrome browsers 29+
-	* See: http://browserhacks.com/
-	* Hack because 'hyphens: auto;' is supported in Chrome only on Android & Mac 
-	* and word-break 'overrides' hyphens in Firefox
-	*/
 .selector:not(*:root), th, td {
 	word-wrap: break-word;
 	overflow-wrap: break-word;
